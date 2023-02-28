@@ -1,4 +1,5 @@
-*{
+/* *{
+
     background-color: gold;
 }
 
@@ -72,4 +73,80 @@
     -webkit-text-stroke: 0.2px;
     -webkit-text-stroke-color: black;
 
+} */
+
+
+
+
+.down{
+    text-align: center;
+}
+
+.todotext{
+    text-decoration: line-through;
+
+}
+
+
+.output{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+@media(max-width: 1060px){
+    .output{
+        flex-direction: column;
+    }
+}
+
+
+.todo-item{
+    margin-right: 15px;
+    border-style: solid;
+    border-color: grey;
+    background-color: lightsteelblue;
+    margin-bottom: 10px;
+}
+
+.todo-itemm{
+    background-color: red;
+}
+
+
+#mytext{
+    width: 10%;
+}
+
+#add-button{
+    width:38px;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+
+
+
+#edit-button{
+    margin-left: 10px;
+    width: 96px;
+    margin-right: 10px;
+    height: 37px;
+}
+
+#del-button{
+    width: 96px;
+    margin-right: 10px;
+    height: 37px;
+}
+
+
+#complete{
+    width: 96px;
+    margin-right: 10px;
+    height: 37px;
 }

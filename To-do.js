@@ -63,7 +63,8 @@ addbutton.addEventListener('click', ()=>{
 
     Completed.addEventListener('click',()=>{
         todotext.classList.add('todotext');
-        Completed.innerHTML="Task Completed"
+        todoItem.classList.add('todo-itemm');
+        Completed.innerHTML="Task Completed";
         editButton.setAttribute("disabled", "disabled");
 
     });
