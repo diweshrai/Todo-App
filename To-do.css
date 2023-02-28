@@ -1,0 +1,75 @@
+*{
+    background-color: gold;
+}
+
+
+.upper{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.input-group{
+    margin-bottom: 17px;
+}
+
+#mytext{
+    width: 15vw;
+    height: 6vh;
+}
+
+#add-button{
+    width:5vw;
+    height: 7vh;
+}
+
+.todo-item{
+    
+        
+        border-style: solid;
+        border-block-color: red;
+        
+        width: 20%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 40%;
+        margin-bottom: 5px;
+ 
+}
+
+.todotext{
+    text-decoration: line-through;
+
+}
+
+
+#edit-button{
+    width: 48px;
+    margin-left: 5px;
+    height: 30px;
+}
+
+#del-button{
+    width: 59px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+
+#complete{
+    width: 96px;
+    margin-left: 10px;
+    height: 37px;
+}
+
+
+.todo-text{
+    font-size: 44px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+
+}
