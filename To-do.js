@@ -6,6 +6,8 @@
 
     </div> */}
 
+{/* <button id="check" type="button">check</button> */}
+
 
 
 const mytext = document.querySelector('#mytext');
@@ -13,6 +15,8 @@ const mytext = document.querySelector('#mytext');
 const addbutton = document.querySelector('#add-button');
 
 const outputside = document.querySelector('.output');
+
+const input = document.querySelector('.input-group');
 
 
 addbutton.addEventListener('click', ()=>{
@@ -27,7 +31,7 @@ addbutton.addEventListener('click', ()=>{
     todoItem.appendChild(todotext);
 
     
-
+    
 
     const  editButton = document.createElement('button');
     editButton.id = 'edit-button';
@@ -59,21 +63,55 @@ addbutton.addEventListener('click', ()=>{
     todoItem.appendChild(date);
 
     
-
+    
+    
+    
 
     Completed.addEventListener('click',()=>{
         todotext.classList.add('todotext');
         todoItem.classList.add('todo-itemm');
-        Completed.innerHTML="Task Completed";
-        editButton.setAttribute("disabled", "disabled");
+        Completed.innerHTML="Completed";
+        // editButton.setAttribute("disabled", "disabled");
 
+         
+    
     });
+
+
+   
+
+    
 
     editButton.addEventListener('click',()=>{
         mytext.value = todotext.innerText;
+        todotext.innerHTML = mytext.value;
+      
+      
         const parent = editButton.parentElement;
         parent.parentElement.removeChild(parent);
         
+        // const currNode = this.todotext;
+        // mytext.value = todotext.innerHTML;
+        // const newText = mytext.value;
+        
+
+
+    //     const  checkbutton = document.createElement('button');
+    //     checkbutton.id = 'check';
+    //     checkbutton.textContent= "Check";
+    //         input.appendChild(checkbutton);
+    
+    
+    
+    //     checkbutton.addEventListener('click',()=>{
+    //         todotext.forEach(function(para) {
+    //            
+    //             });
+    //           });
+    // checkbutton.remove();
+    //     }); 
+
+
     });
 
 

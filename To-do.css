@@ -89,24 +89,31 @@
 
 
 .output{
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    
+    flex-wrap: wrap;
 }
 
 
 @media(max-width: 1060px){
     .output{
+        display: inline-flex;
         flex-direction: column;
     }
 }
 
 
 .todo-item{
+    flex-basis: 33%;
     margin-right: 15px;
     border-style: solid;
     border-color: grey;
     background-color: lightsteelblue;
     margin-bottom: 10px;
+}
+
+.output{
+    justify-content: center;
 }
 
 .todo-itemm{
